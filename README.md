@@ -1,7 +1,7 @@
-# A step-by-step setup of NGinx installed on GCP VM and GitHub repo pulled in /var/www/html folder #
-## GCP Cloud Storage, Kubernetes, and more ##
+# A step-by-step guide of how to install NGinx on GCP VM and clone GitHub repo to it
 
-### Setting up GCP ###
+
+### Setting up VM
 
 1. Create GCP account and navigate to the dashboard
 2. Go to: Compute Engine > VM Instances
@@ -20,7 +20,8 @@
 5. Your VM is ready
 
 
-### Access your VM from local Terminal ###
+
+### Access your VM from local Terminal
 
 1. From the GCP Dashboard navigate to: Compute Engine > VM Instances (you will see your newly created VM)
 2. On your VM, under the connect tab, click on the arrow and select 'Open in browser window'
@@ -46,19 +47,10 @@
 16. You are now logged in to your VM from your local terminal
 
 
-### Pull GitHub repository in the /var/www/html/ folder ###
+
+### Pull GitHub repository in the VM ###
 
 1. Access your VM through terminal
 2. Run: cd ../../var/www/html/
-
-
-### Configure the NGinx server and setup reverse proxy ###
-
-TBC
-
-
-### Cloud Storage Bucket ###
-
-TBC
-
+3. Run: git clone REPO_URL
 
